@@ -1,0 +1,588 @@
+﻿[
+    {
+        "scriptExecutionCompte": "win21h2"
+    },
+    {
+        "scriptExecutionEnAdministrateur": true
+    },
+    {
+        "scriptExecutionEmplacement": "C:\\Users\\WIN21h2\\Desktop\\OCINEW"
+    },
+    {
+        "scriptVersion": "1.0"
+    },
+    {
+        "systemeDate": "2025-03-07-23-08-24"
+    },
+    {
+        "systemeDomaineControleurNom": "null"
+    },
+    {
+        "systemeDomaineForetNom": "null"
+    },
+    {
+        "systemeDomaineNom": "null"
+    },
+    {
+        "systemeDureeFonctionnement": "187"
+    },
+    {
+        "systemeInterfaceReseauIpListe": [
+            "192.168.38.128",
+            "127.0.0.1"
+        ]
+    },
+    {
+        "systemeLangue": "040C"
+    },
+    {
+        "systemeNom": "DESKTOP-9JI9O3C"
+    },
+    {
+        "systemeSystemeExploitation": "Microsoft Windows 10 Professionnel"
+    },
+    {
+        "systemeSystemeExploitationVersion": "10.0.19043"
+    },
+    {
+        "systemeType": 0
+    },
+    {
+        "systemeSystemeExploitationCorrectif": [
+            "KB5020872",
+            "KB5000736",
+            "KB5015684",
+            "KB5020683",
+            "KB5033052",
+            "KB5001330",
+            "KB5046823",
+            "KB5001405"
+        ]
+    },
+    {
+        "systemeSystemeExploitationCorrectifWsus": "http://192.168.38.129:8530"
+    },
+    {
+        "systemeChiffrementDisqueBitlocker": ""
+    },
+    {
+        "systemeChiffrementDisqueOs": ""
+    },
+    {
+        "compteAdministrateurListe": [
+            "Administrateur",
+            "WIN21h2"
+        ]
+    },
+    {
+        "compteListe": [
+            "Administrateur",
+            "DefaultAccount",
+            "Invité",
+            "WDAGUtilityAccount",
+            "WIN21h2"
+        ]
+    },
+    {
+        "compteAdministrateurParDefautEtat": false
+    },
+    {
+        "compteAdministrateurParDefautNom": "Administrateur"
+    },
+    {
+        "compteInviteEtat": false
+    },
+    {
+        "compteInviteNom": "Invité"
+    },
+    {
+        "reseauAccessInternet": false
+    },
+    {
+        "reseauOrdinateurNomNetBios": "DESKTOP-9JI9O3C"
+    },
+    {
+        "reseauParefeuDomaine": true
+    },
+    {
+        "reseauParefeuDomaineActionFluxEntrantDefaut": false
+    },
+    {
+        "reseauParefeuPrive": true
+    },
+    {
+        "reseauParefeuPriveActionFluxEntrantDefaut": false
+    },
+    {
+        "reseauParefeuPublique": true
+    },
+    {
+        "reseauParefeuPubliqueActionFluxEntrantDefaut": false
+    },
+    {
+        "reseauProxy": "null"
+    },
+    {
+        "reseauProxyActive": true
+    },
+    {
+        "serviceImpression": true
+    },
+    {
+        "serviceRdp": true
+    },
+    {
+        "serviceSmb": true
+    },
+    {
+        "serviceSmbSignatureRequise": false
+    },
+    {
+        "serviceSmbVersion1": false
+    },
+    {
+        "serviceSmbVersion23": true
+    },
+    {
+        "servicePortsOuvertsListe": [
+            7680,
+            3389,
+            445,
+            135,
+            5040,
+            3389,
+            139,
+            135
+        ]
+    },
+    {
+        "serviceWmiActive": ""
+    },
+    {
+        "protectionAntivirusAgent12Kaspersky32BitsClientInstalle": ""
+    },
+    {
+        "protectionAntivirusAgent12Kaspersky64BitsClientInstalle": ""
+    },
+    {
+        "protectionAntivirusAgent12Kaspersky64BitsDerniereMaj": ""
+    },
+    {
+        "protectionAntivirusAgent12Kaspersky32BitsDerniereMaj": ""
+    },
+    {
+        "protectionAntivirusAgent12Kaspersky64BitsTempsReelEtat": ""
+    },
+    {
+        "protectionAntivirusAgent12Kaspersky32BitsTempsReelEtat": ""
+    },
+    {
+        "protectionAntivirusAgent12Kaspersky64BitsServeurAdministration": ""
+    },
+    {
+        "protectionAntivirusAgent12Kaspersky32BitsServeurAdministration": ""
+    },
+    {
+        "protectionAntivirusAgent12Kaspersky64BitsTempsReelActif": ""
+    },
+    {
+        "protectionAntivirusAgent12Kaspersky32bitsTempsReelActif": ""
+    },
+    {
+        "protectionAntivirusClient11Kaspersky64BitsVersion": ""
+    },
+    {
+        "protectionAntivirusClient11Kaspersky64BitsVersionAffichee": ""
+    },
+    {
+        "protectionAntivirusClient11Kaspersky32BitsVersion": ""
+    },
+    {
+        "protectionAntivirusClient11Kaspersky32BitsVersionAffichee": ""
+    },
+    {
+        "protectionAntivirusClient10Kaspersky64BitsVersion": ""
+    },
+    {
+        "protectionAntivirusClient10SP1Kaspersky64BitsVersion": ""
+    },
+    {
+        "protectionAntivirusClient10SP2Kaspersky64BitsVersion": ""
+    },
+    {
+        "protectionAntivirusClient10Kaspersky32BitsVersion": ""
+    },
+    {
+        "protectionAntivirusClient10SP1Kaspersky32BitsVersion": ""
+    },
+    {
+        "protectionAntivirusClient10SP2Kaspersky32BitsVersion": ""
+    },
+    {
+        "configurationMdpAgeMaximum": "Pasdelimite"
+    },
+    {
+        "configurationMdpAgeMinimum": "0"
+    },
+    {
+        "configurationMdpChangementRequis": "0"
+    },
+    {
+        "configurationMdpComplexite": "0"
+    },
+    {
+        "configurationMdpDureeVerrouillage": "30"
+    },
+    {
+        "configurationMdpEnClaire": "0"
+    },
+    {
+        "configurationMdpFenetreObservation": "30"
+    },
+    {
+        "configurationMdpForceDeconnexionHeureExpiration": "Jamais"
+    },
+    {
+        "configurationMdpLongueurMinimum": "0"
+    },
+    {
+        "configurationMdpSeuilVerrouillage": "Jamais"
+    },
+    {
+        "configurationMdpTailleHistorique": "Aucune"
+    },
+    {
+        "configurationLdapLiaisonCanal": ""
+    },
+    {
+        "configurationLdapSignature": ""
+    },
+    {
+        "configurationMppActive": ""
+    },
+    {
+        "configurationMppForce": 0
+    },
+    {
+        "configurationMppPolitique": ""
+    },
+    {
+        "configurationPowershellPolitiqueExecution": "Unrestricted"
+    },
+    {
+        "configurationTachesPlannifieesListe": [
+            "MicrosoftEdgeUpdateTaskMachineCore",
+            "MicrosoftEdgeUpdateTaskMachineUA",
+            "Microsoft Compatibility Appraiser",
+            "PcaPatchDbTask",
+            "PcaWallpaperAppDetect",
+            "Consolidator",
+            "Data Integrity Check And Scan",
+            "Device",
+            "IntegrityCheck",
+            "RefreshCache",
+            "ScanForUpdates",
+            "Registration",
+            "SvcRestartTask",
+            "SpeechModelDownloadTask",
+            "Schedule Scan",
+            "USO_UxBroker",
+            "PerformRemediation",
+            "QueueReporting",
+            "Scheduled Start"
+        ]
+    },
+    {
+        "configurationTelemetrieNiveau": ""
+    },
+    {
+        "configurationUacActive": 1
+    },
+    {
+        "applicationChromeVersion": ""
+    },
+    {
+        "applicationFirefoxEsrVersion": ""
+    },
+    {
+        "applicationFirefoxVersion": ""
+    },
+    {
+        "applicationListe": [
+            "VMware Tools",
+            "NXLog-CE"
+        ]
+    },
+    {
+        "durcissementExtensionCaches": 0
+    },
+    {
+        "durcissementEcranIntelligent": ""
+    },
+    {
+        "durcissementFichierDossierCaches": 1
+    },
+    {
+        "durcissementAutoAdminLogon": "0"
+    },
+    {
+        "durcissementEcranDeVeille": ""
+    },
+    {
+        "durcissementNetBiosConfiguration": ""
+    },
+    {
+        "durcissementRDPActif": 0
+    },
+    {
+        "durcissementSSDPSRVService": 4
+    },
+    {
+        "durcissementSSDPSRVTypeDemarrage": "Auto"
+    },
+    {
+        "durcissementSEHOP": ""
+    },
+    {
+        "durcissementWindowsStoreConfiguration": ""
+    },
+    {
+        "durcissementLanmanServerService": 4
+    },
+    {
+        "durcissementPlugPlayConfiguration": {
+            "CanPauseAndContinue": false,
+            "CanShutdown": true,
+            "CanStop": true,
+            "DisplayName": "Plug-and-Play",
+            "DependentServices": [],
+            "MachineName": ".",
+            "ServiceName": "PlugPlay",
+            "ServicesDependedOn": [],
+            "ServiceHandle": {
+                "IsInvalid": false,
+                "IsClosed": false
+            },
+            "Status": 4,
+            "ServiceType": 32,
+            "StartType": 2,
+            "Site": null,
+            "Container": null,
+            "Name": "PlugPlay",
+            "RequiredServices": []
+        }
+    },
+    {
+        "durcissementIpv6Configuration": ""
+    },
+    {
+        "durcissementLanManServerParamautodisconnect": "15"
+    },
+    {
+        "durcissementLanManServerParamenableforcedlogoff": "1"
+    },
+    {
+        "durcissementLanManServerParamenablesecuritysignature": "0"
+    },
+    {
+        "durcissementLanManServerParamNullSessionPipes": "0 0 0 0"
+    },
+    {
+        "durcissementLanManServerParamrequiresecuritysignature": "0"
+    },
+    {
+        "durcissementLanManServerParamrestrictnullsessaccess": "1"
+    },
+    {
+        "durcissementLanManServerParamSMB1": ""
+    },
+    {
+        "durcissementLanManWorkstationParamEnablePlainTextPassword": "0"
+    },
+    {
+        "durcissementLanManWorkstationParamEnableSecuritySignature": "1"
+    },
+    {
+        "durcissementLanManWorkstationParamRequireSecuritySignature": "0"
+    },
+    {
+        "durcissementMrxsmbParam": ""
+    },
+    {
+        "durcissementMrxsmb20Param": ""
+    },
+    {
+        "durcissementlanmanWorkstationService": ""
+    },
+    {
+        "durcissementRDPConfigurationDisablePasswordSaving": ""
+    },
+    {
+        "durcissementRDPConfigurationfDisableCam": ""
+    },
+    {
+        "durcissementRDPConfigurationfDisableAudioCapture": ""
+    },
+    {
+        "durcissementRDPConfigurationfDisableClip": ""
+    },
+    {
+        "durcissementRDPConfigurationfDisableCcm": ""
+    },
+    {
+        "durcissementRDPConfigurationfDisableCdm": ""
+    },
+    {
+        "durcissementRDPConfigurationfDisableLPT": ""
+    },
+    {
+        "durcissementRDPConfigurationfDisablePNPRedir": ""
+    },
+    {
+        "durcissementRDPConfigurationfForceClientLptDef": ""
+    },
+    {
+        "durcissementRDPConfigurationfDisableCpm": ""
+    },
+    {
+        "durcissementRDPConfigurationUserAuthentication": ""
+    },
+    {
+        "durcissementRDPConfigurationMinEncryptionLevel": ""
+    },
+    {
+        "durcissementRDPConfigurationSecurityLayer": ""
+    },
+    {
+        "durcissementRDPConfigurationfResetBroken": ""
+    },
+    {
+        "durcissementRDPConfigurationMaxConnectionTime": ""
+    },
+    {
+        "durcissementRDPConfigurationMaxIdleTime": ""
+    },
+    {
+        "durcissementRDPConfigurationMaxDisconnectionTime": ""
+    },
+    {
+        "durcissementUACConfigurationConsentPromptBehaviorAdmin": "5"
+    },
+    {
+        "durcissementUACConfigurationConsentPromptBehaviorUser": "3"
+    },
+    {
+        "durcissementUACConfigurationEnableInstallerDetection": "1"
+    },
+    {
+        "durcissementUACConfigurationEnableLUA": "1"
+    },
+    {
+        "durcissementUACConfigurationEnableSecureUIAPaths": "1"
+    },
+    {
+        "durcissementUACConfigurationEnableUIADesktopToggle": "0"
+    },
+    {
+        "durcissementUACConfigurationEnableVirtualization": "1"
+    },
+    {
+        "durcissementUACConfigurationFilterAdministratorToken": "1"
+    },
+    {
+        "durcissementUACConfigurationPromptOnSecureDesktop": "1"
+    },
+    {
+        "durcissementUACConfigurationUndockWithoutLogon": "1"
+    },
+    {
+        "durcissementUACConfigurationValidateAdminCodeSignatures": "0"
+    },
+    {
+        "durcissementUACConfigurationDisableCAD": "0"
+    },
+    {
+        "durcissementUACConfigurationDontDisplayLastUserName": "0"
+    },
+    {
+        "durcissementUACConfigurationScForceOption": "0"
+    },
+    {
+        "durcissementUACConfigurationShutdownWithoutLogon": "1"
+    },
+    {
+        "durcissementTCPIPConfigurationDisableIPSourceRouting": ""
+    },
+    {
+        "durcissementTCPIPConfigurationEnableDeadGWDetect": ""
+    },
+    {
+        "durcissementTCPIPConfigurationEnableICMPRedirect": ""
+    },
+    {
+        "durcissementTCPIPConfigurationEnablePMTUDiscovery": ""
+    },
+    {
+        "durcissementTCPIPConfigurationKeepAliveTime": ""
+    },
+    {
+        "durcissementTCPIPConfigurationPerformRouterDiscovery": ""
+    },
+    {
+        "durcissementTCPIPConfigurationSynAttackProtect": ""
+    },
+    {
+        "durcissementTCPIPConfigurationTcpMaxHalfOpen": ""
+    },
+    {
+        "durcissementTCPIPConfigurationTcpMaxHalfOpenRetried": ""
+    },
+    {
+        "durcissementPolicyAgent": ""
+    },
+    {
+        "durcissementLanmanServerParametreAutoShareServer": ""
+    },
+    {
+        "durcissementLanmanServerParametreAutoShareWks": ""
+    },
+    {
+        "durcissementLanmanServerParametreHidden": ""
+    },
+    {
+        "durcissementLanmanServerParametreMRXSMB": ""
+    },
+    {
+        "durcissementLanmanServerParametreDNS": ""
+    },
+    {
+        "durcissementNTPConfigurationW32NtpServer": "time.windows.com,0x9"
+    },
+    {
+        "durcissementNTPConfigurationW32Type": "NTP"
+    },
+    {
+        "durcissementNTPConfigurationDateTime\u00270\u0027": ""
+    },
+    {
+        "durcissementNTPConfigurationDateTime\u0027(Default)\u0027": ""
+    },
+    {
+        "durcissementNTPConfigurationServiceW32": 1
+    },
+    {
+        "durcissementUsbStatus": ""
+    },
+    {
+        "durcissementAuditPowershellModLogging": ""
+    },
+    {
+        "durcissementAuditPowershellModNames": ""
+    },
+    {
+        "durcissementAuditPowershellBlockLogging": ""
+    },
+    {
+        "durcissementAutorunConfiguration": ""
+    }
+]
