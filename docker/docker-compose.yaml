@@ -72,13 +72,6 @@ services:
     depends_on:
       - logstash
 
-volumes:
-  proxy_logs:
-  elasticsearch_data:
-  grafana_data:
-  ntp_data:
-
-
 networks:
-  proxy_network:
+  elk_network:
     driver: bridge
