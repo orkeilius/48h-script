@@ -10,31 +10,26 @@ services:
     environment:
       - NTP_SERVERS=0.fr.pool.ntp.org,1.fr.pool.ntp.org,2.fr.pool.ntp.org
 
-  tableau-de-bord:
-    image: grafana/grafana:latest
-    ports:
-      - "3000:3000"
-    volumes:
-      - grafana_data:/var/lib/grafana:rw
-    depends_on:
-      - bdd
-  
-  bdd:
-    image: elasticsearch:7.17.0
-    container_name: vch-elasticsearch
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.7.1
+    container_name: elasticsearch
     environment:
       - discovery.type=single-node
-      - ES_JAVA_OPTS=-Xms1g -Xmx1g
-      - xpack.security.enabled=false
-      - ELASTIC_PASSWORD=VeoliaSecurePassword123
-      - ELASTIC_USERNAME=elastic
-    volumes:
-      - elasticsearch_data:/usr/share/elasticsearch/data
-    restart: always
+      - xpack.security.enabled=false  # Désactive la sécurité pour simplifier
     ports:
       - "9200:9200"
-      - "9300:9300"
+    networks:
+      - elk_network
 
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.7.1
+    container_name: kibana
+    ports:
+      - "5601:5601"
+    networks:
+      - elk_network
+    depends_on:
+      - elasticsearch
   # Service de proxy (HTTP, WSUS, DNS)
   haproxy:
     image: haproxy:latest
@@ -47,7 +42,35 @@ services:
       - ./haproxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg
     restart: always
 
-  
+  logstash:
+    image: docker.elastic.co/logstash/logstash:8.7.1
+    container_name: logstash
+    volumes:
+      - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yaml:ro
+      - ./logstash/pipeline:/usr/share/logstash/pipeline:ro
+    environment:
+      - "LS_JAVA_OPTS=-Xms512m -Xmx512m"
+    ports:
+      - "5044:5044"  # Pour Filebeat
+      - "9600:9600"  # API de monitoring
+    networks:
+      - elk_network
+    depends_on:
+      - elasticsearch
+
+
+  filebeat:
+    image: docker.elastic.co/beats/filebeat:8.7.1
+    container_name: filebeat    #Filebeat est un agent léger qui envoie les logs de tes containers vers Logstash.
+    user: root
+    volumes:
+      - ./filebeat.yml:/usr/share/filebeat/filebeat.yaml:ro
+      - /var/lib/docker/containers:/var/lib/docker/containers:ro
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - elk_network
+    depends_on:
+      - logstash
 
 volumes:
   proxy_logs:
