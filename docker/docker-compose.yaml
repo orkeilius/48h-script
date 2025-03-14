@@ -1,0 +1,61 @@
+services:
+
+  # Service de temps (NTP)
+  ntp:
+    image: cturra/ntp:latest
+    container_name: vch-ntp
+    restart: always
+    ports:
+      - "123:123/udp"
+    environment:
+      - NTP_SERVERS=0.fr.pool.ntp.org,1.fr.pool.ntp.org,2.fr.pool.ntp.org
+
+  tableau-de-bord:
+    image: grafana/grafana:latest
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana_data:/var/lib/grafana:rw
+    depends_on:
+      - bdd
+  
+  bdd:
+    image: elasticsearch:7.17.0
+    container_name: vch-elasticsearch
+    environment:
+      - discovery.type=single-node
+      - ES_JAVA_OPTS=-Xms1g -Xmx1g
+      - xpack.security.enabled=false
+      - ELASTIC_PASSWORD=VeoliaSecurePassword123
+      - ELASTIC_USERNAME=elastic
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+    restart: always
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+
+  # Service de proxy (HTTP, WSUS, DNS)
+  haproxy:
+    image: haproxy:latest
+    container_name: vch-proxy
+    ports:
+      - "8530:8530"  # Pour WSUS
+      - "8080:8080"  # Pour le proxy Web
+      #- "53:53/udp"  # Pour DNS
+    volumes:
+      - ./haproxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg
+    restart: always
+
+  
+
+volumes:
+  proxy_logs:
+  elasticsearch_data:
+  grafana_data:
+  ntp_data:
+
+
+networks:
+  proxy_network:
+    driver: bridge

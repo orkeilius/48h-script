@@ -232,11 +232,13 @@ function get_info_security {
     # Tâches planifiées (cron et systemd)
     echo "{\"configurationTachesPlannifieesListe\": [" >> $output
     if command -v systemctl &>/dev/null; then
-        systemctl list-timers --all --no-pager | grep -v NEXT | grep -v "^$" | head -15 | awk '{print "\"" $5 "\"" }' | sed 's/$/,/' | sed '$ s/,$//' >> $output
+        systemctl list-timers --all --no-pager | grep -v NEXT | grep -v "^$" | head -15 | 
+        awk '{print "            \"" $5 "\"," }' >> $output
     else
         for user in $(cut -f1 -d: /etc/passwd); do 
-            crontab -l -u $user 2>/dev/null | grep -v "^#" | head -15 | awk '{print "\"" $6 "\"" }' | sed 's/$/,/'
-        done | sed '$ s/,$//' >> $output
+            crontab -l -u $user 2>/dev/null | grep -v "^#" | head -15 | 
+            awk '{print "            \"" $6 "\"," }' >> $output
+        done
     fi
     echo "]}," >> $output
 }
@@ -306,7 +308,7 @@ get_info_security
 get_info_hardening
 
 # supprimer la dernière virgule
-sed '$ s/.$/ /' $output > $output.tmp
+sed 's/,\n$//' $output > $output.tmp
 
 echo "]" >> $output
 
